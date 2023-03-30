@@ -333,7 +333,7 @@ describe('Exchange', () => {
           await expect(exchange.connect(user2).fillOrder(1)).to.be.reverted
         })
 
-        it('rejects canceled orders', async () => {
+        it('Rejects canceled orders', async () => {
           transaction = await exchange.connect(user1).cancelOrder(1)
           await transaction.wait()
 
